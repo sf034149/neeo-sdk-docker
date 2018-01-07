@@ -4,4 +4,4 @@ Build with
 
 docker build -t neeo/node-sdk .
 
-and use as base images for your device using the neeo-device container. 
+inside your docker directory where Dockerfile is located and use as base images for your device using the neeo-device container. 
