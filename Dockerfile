@@ -10,6 +10,7 @@ RUN apt-get update && \
 # Disable d-bus for avahi
 RUN sed -i \
 	-e "s/#enable-dbus=yes/enable-dbus=no/" \
+	-e "s/rlimit-nproc=3/rlimit-nproc=30/" \
 	/etc/avahi/avahi-daemon.conf
 
 # Install Neeo SDK directly from git
